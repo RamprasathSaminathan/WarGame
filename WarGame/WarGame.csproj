@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F151C24E-39B9-47B3-9B29-54F0E76FAFCF}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WarGame</RootNamespace>
+    <AssemblyName>WarGame</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="GamePlayActivity.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\GamePlay.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Clubs10.png" />
+    <AndroidResource Include="Resources\drawable\Diamonds10.png" />
+    <AndroidResource Include="Resources\drawable\Hearts10.png" />
+    <AndroidResource Include="Resources\drawable\Spades10.png" />
+    <AndroidResource Include="Resources\drawable\Clubs2.png" />
+    <AndroidResource Include="Resources\drawable\Diamonds2.png" />
+    <AndroidResource Include="Resources\drawable\Hearts2.png" />
+    <AndroidResource Include="Resources\drawable\Spades2.png" />
+    <AndroidResource Include="Resources\drawable\Clubs3.png" />
+    <AndroidResource Include="Resources\drawable\Diamonds3.png" />
+    <AndroidResource Include="Resources\drawable\Hearts3.png" />
+    <AndroidResource Include="Resources\drawable\Spades3.png" />
+    <AndroidResource Include="Resources\drawable\Clubs4.png" />
+    <AndroidResource Include="Resources\drawable\Diamonds4.png" />
+    <AndroidResource Include="Resources\drawable\Hearts4.png" />
+    <AndroidResource Include="Resources\drawable\Spades4.png" />
+    <AndroidResource Include="Resources\drawable\Clubs5.png" />
+    <AndroidResource Include="Resources\drawable\Diamonds5.png" />
+    <AndroidResource Include="Resources\drawable\Hearts5.png" />
+    <AndroidResource Include="Resources\drawable\Spades5.png" />
+    <AndroidResource Include="Resources\drawable\Clubs6.png" />
+    <AndroidResource Include="Resources\drawable\Diamonds6.png" />
+    <AndroidResource Include="Resources\drawable\Hearts6.png" />
+    <AndroidResource Include="Resources\drawable\Spades6.png" />
+    <AndroidResource Include="Resources\drawable\Clubs7.png" />
+    <AndroidResource Include="Resources\drawable\Diamonds7.png" />
+    <AndroidResource Include="Resources\drawable\Hearts7.png" />
+    <AndroidResource Include="Resources\drawable\Spades7.png" />
+    <AndroidResource Include="Resources\drawable\Clubs8.png" />
+    <AndroidResource Include="Resources\drawable\Diamonds8.png" />
+    <AndroidResource Include="Resources\drawable\Hearts8.png" />
+    <AndroidResource Include="Resources\drawable\Spades8.png" />
+    <AndroidResource Include="Resources\drawable\Clubs9.png" />
+    <AndroidResource Include="Resources\drawable\Diamonds9.png" />
+    <AndroidResource Include="Resources\drawable\Hearts9.png" />
+    <AndroidResource Include="Resources\drawable\Spades9.png" />
+    <AndroidResource Include="Resources\drawable\ClubsAce.png" />
+    <AndroidResource Include="Resources\drawable\DiamondsAce.png" />
+    <AndroidResource Include="Resources\drawable\HeartsAce.png" />
+    <AndroidResource Include="Resources\drawable\SpadesAce.png" />
+    <AndroidResource Include="Resources\drawable\ClubsJ.png" />
+    <AndroidResource Include="Resources\drawable\DiamondsJ.png" />
+    <AndroidResource Include="Resources\drawable\HeartsJ.png" />
+    <AndroidResource Include="Resources\drawable\SpadesJ.png" />
+    <AndroidResource Include="Resources\drawable\ClubsK.png" />
+    <AndroidResource Include="Resources\drawable\DiamondsK.png" />
+    <AndroidResource Include="Resources\drawable\HeartsK.png" />
+    <AndroidResource Include="Resources\drawable\SpadesK.png" />
+    <AndroidResource Include="Resources\drawable\ClubsQ.png" />
+    <AndroidResource Include="Resources\drawable\DiamondsQ.png" />
+    <AndroidResource Include="Resources\drawable\HeartsQ.png" />
+    <AndroidResource Include="Resources\drawable\SpadesQ.png" />
+    <AndroidResource Include="Resources\drawable\Joker.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+		<Target Name="BeforeBuild">
+		</Target>
+		<Target Name="AfterBuild">
+		</Target>
+ -->
+</Project>

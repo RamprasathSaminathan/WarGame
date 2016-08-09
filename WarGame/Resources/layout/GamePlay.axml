@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Button
+        android:text="Deal Hand"
+        android:id="@+id/dealHand"
+        android:layout_column="1"
+        android:layout_width="200.7dp"
+        android:layout_height="75.5dp" />
+    <TableRow
+        android:gravity="center_horizontal">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_column="0"
+            android:id="@+id/card1"
+            android:minWidth="150dp"
+            android:minHeight="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="0.0dp" />
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_column="1"
+            android:id="@+id/card2"
+            android:gravity="right"
+            android:minWidth="150dp"
+            android:minHeight="250dp"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:scaleType="centerInside" />
+    </TableRow>
+    <TableRow>
+    </TableRow>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_column="0"
+        android:id="@+id/roundFeedback"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:text="Current Scores"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_column="0"
+        android:id="@+id/currentScore"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:text="Player 1:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_column="0"
+        android:id="@+id/player1Score"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:text="Player 2:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_column="0"
+        android:id="@+id/player2Score"
+        android:gravity="center_horizontal" />
+</TableLayout>
